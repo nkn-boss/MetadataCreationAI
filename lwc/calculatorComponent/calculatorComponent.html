@@ -1,0 +1,7 @@
+<template>
+    <lightning-input label="Number 1" value={number1} type="number"></lightning-input>
+    <lightning-input label="Number 2" value={number2} type="number"></lightning-input>
+    <lightning-combobox label="Operation" value={operation} options={operations}></lightning-combobox>
+    <lightning-button label="Calculate" onclick={handleCalculate}></lightning-button>
+    <p if:true={result}>Result: {result}</p>
+</template>
