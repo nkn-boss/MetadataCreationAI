@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>Exemption_List__c</members>
+    <members>Exemption_Log__c</members>
+    <name>CustomObject</name>
+  </types>
+  <types>
+    <members>Exemption_List__c.Agent__c</members>
+    <members>Exemption_List__c.Reason__c</members>
+    <members>Exemption_Log__c.Agent__c</members>
+    <members>Exemption_Log__c.Action__c</members>
+    <members>Exemption_Log__c.Timestamp__c</members>
+    <name>CustomField</name>
+  </types>
+  <types>
+    <members>AccountValidationRule</members>
+    <name>ValidationRule</name>
+  </types>
+  <types>
+    <members>SuperUserPermissionSet</members>
+    <name>PermissionSet</name>
+  </types>
+  <version>57.0</version>
+</Package>
