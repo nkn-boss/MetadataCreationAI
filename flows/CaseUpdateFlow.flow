@@ -1,0 +1,28 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <label>Case Update Flow</label>
+    <processType>Flow</processType>
+    <status>Active</status>
+    <triggerType>RecordUpdate</triggerType>
+    <variables>
+        <name>CaseId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <recordUpdates>
+        <object>Case</object>
+        <criteria>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </criteria>
+        <actions>
+            <action>
+                <type>EmailAlert</type>
+                <emailTemplate>CaseClosedTemplate</emailTemplate>
+            </action>
+        </actions>
+    </recordUpdates>
+</Flow>
