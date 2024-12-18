@@ -1,0 +1,22 @@
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Case Management Permissions</label>
+    <fieldPermissions>
+        <field>Case.Status</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Case.Origin</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <objectPermissions>
+        <object>Case</object>
+        <allowCreate>true</allowCreate>
+        <allowRead>true</allowRead>
+        <allowEdit>true</allowEdit>
+        <allowDelete>true</allowDelete>
+        <viewAllRecords>false</viewAllRecords>
+        <modifyAllRecords>false</modifyAllRecords>
+    </objectPermissions>
+</PermissionSet>
