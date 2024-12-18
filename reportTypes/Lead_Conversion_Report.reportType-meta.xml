@@ -1,0 +1,10 @@
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Conversion_Report</fullName>
+    <label>Lead Conversion Report</label>
+    <baseObject>Lead</baseObject>
+    <sections>
+        <columns>
+            <field>LeadSource__c</field>
+        </columns>
+    </sections>
+</ReportType>
