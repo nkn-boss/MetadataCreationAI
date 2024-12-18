@@ -1,0 +1,12 @@
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Record_Page</fullName>
+    <type>RecordPage</type>
+    <flexiPageRegions>
+        <name>Opportunity Information</name>
+        <componentInstances>
+            <componentInstance>
+                <componentName>force:recordView</componentName>
+            </componentInstance>
+        </componentInstances>
+    </flexiPageRegions>
+</FlexiPage>
