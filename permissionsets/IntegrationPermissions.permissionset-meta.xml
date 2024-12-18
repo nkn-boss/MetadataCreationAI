@@ -1,0 +1,11 @@
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Integration Permissions</label>
+    <userPermissions>
+        <name>API Enabled</name>
+        <enabled>true</enabled>
+    </userPermissions>
+    <userPermissions>
+        <name>Modify All Data</name>
+        <enabled>true</enabled>
+    </userPermissions>
+</PermissionSet>
