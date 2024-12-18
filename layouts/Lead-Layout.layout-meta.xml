@@ -1,0 +1,13 @@
+<Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead-Layout</fullName>
+    <layoutSections>
+        <layoutSection>
+            <label>Lead Information</label>
+            <layoutColumns>
+                <layoutItems>
+                    <field>LeadSource__c</field>
+                </layoutItems>
+            </layoutColumns>
+        </layoutSection>
+    </layoutSections>
+</Layout>
