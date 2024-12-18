@@ -1,0 +1,6 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <processType>Flow</processType>
+    <label>Service Request Automation</label>
+    <description>Automates the creation and updating of service requests</description>
+    <!-- Flow elements go here -->
+</Flow>
