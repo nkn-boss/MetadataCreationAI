@@ -1,0 +1,9 @@
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CaseRecordPage</fullName>
+    <type>RecordPage</type>
+    <object>Case</object>
+    <quickActionList>
+        <quickAction>NewTask</quickAction>
+        <quickAction>NewEvent</quickAction>
+    </quickActionList>
+</FlexiPage>
