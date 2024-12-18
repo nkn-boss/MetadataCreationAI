@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>LeadSource__c</members>
+    <members>StageName__c</members>
+    <members>CloseDate__c</members>
+    <name>CustomField</name>
+  </types>
+  <types>
+    <members>ValidEmailFormat</members>
+    <members>RequiredFields</members>
+    <name>ValidationRule</name>
+  </types>
+  <types>
+    <members>Lead-Layout</members>
+    <members>Opportunity-Layout</members>
+    <name>PageLayout</name>
+  </types>
+  <types>
+    <members>Lead_Record_Page</members>
+    <members>Opportunity_Record_Page</members>
+    <name>FlexiPage</name>
+  </types>
+  <types>
+    <members>Lead_Conversion_Report</members>
+    <members>Opportunity_Pipeline_Report</members>
+    <name>ReportType</name>
+  </types>
+  <types>
+    <members>Sales_Rep_Permissions</members>
+    <name>PermissionSet</name>
+  </types>
+  <version>57.0</version>
+</Package>
