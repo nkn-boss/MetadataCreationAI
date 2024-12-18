@@ -1,0 +1,13 @@
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Social Media Integration Permissions</label>
+    <fieldPermissions>
+        <field>Social_Post__c.Name</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Social_Persona__c.Name</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+</PermissionSet>
