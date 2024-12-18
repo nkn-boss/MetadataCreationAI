@@ -1,0 +1,10 @@
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Social Post</label>
+    <pluralLabel>Social Posts</pluralLabel>
+    <nameField>
+        <label>Social Post Name</label>
+        <type>Text</type>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>
