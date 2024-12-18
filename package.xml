@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>FinancialSystemIntegration</members>
+    <members>ERPSystemIntegration</members>
+    <name>ApexClass</name>
+  </types>
+  <types>
+    <members>DataMapping__mdt</members>
+    <members>DataMappingERP__mdt</members>
+    <name>CustomMetadata</name>
+  </types>
+  <types>
+    <members>IntegrationPermissions</members>
+    <name>PermissionSet</name>
+  </types>
+  <version>57.0</version>
+</Package>
