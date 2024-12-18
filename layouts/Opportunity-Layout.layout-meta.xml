@@ -1,0 +1,14 @@
+<Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity-Layout</fullName>
+    <layoutSections>
+        <layoutSection>
+            <label>Opportunity Information</label>
+            <layoutColumns>
+                <layoutItems>
+                    <field>StageName__c</field>
+                    <field>CloseDate__c</field>
+                </layoutItems>
+            </layoutColumns>
+        </layoutSection>
+    </layoutSections>
+</Layout>
