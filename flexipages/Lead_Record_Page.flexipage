@@ -1,0 +1,12 @@
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Record_Page</fullName>
+    <type>RecordPage</type>
+    <flexiPageRegions>
+        <name>Lead Information</name>
+        <componentInstances>
+            <componentInstance>
+                <componentName>force:recordView</componentName>
+            </componentInstance>
+        </componentInstances>
+    </flexiPageRegions>
+</FlexiPage>
