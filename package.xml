@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>LeadSource__c</members>
+    <name>CustomField</name>
+  </types>
+  <types>
+    <members>LeadMandatoryFields</members>
+    <name>ValidationRule</name>
+  </types>
+  <types>
+    <members>LeadAssignmentBySource</members>
+    <name>LeadAssignmentRules</name>
+  </types>
+  <version>57.0</version>
+</Package>
