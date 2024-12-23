@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>LeadScore__c</members>
+    <members>QualificationStatus__c</members>
+    <name>CustomField</name>
+  </types>
+  <types>
+    <members>LeadScoreRangeValidation</members>
+    <name>ValidationRule</name>
+  </types>
+  <types>
+    <members>LeadQualificationFlow</members>
+    <name>Flow</name>
+  </types>
+  <types>
+    <members>HighPotentialLeadAlert</members>
+    <name>EmailAlert</name>
+  </types>
+  <version>57.0</version>
+</Package>
