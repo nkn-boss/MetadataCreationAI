@@ -1,0 +1,23 @@
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>CMA Business User Permissions</label>
+    <fieldPermissions>
+        <field>Customer__c.CustomerID__c</field>
+        <readable>true</readable>
+        <editable>false</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Customer__c.Email__c</field>
+        <readable>true</readable>
+        <editable>false</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Customer__c.Phone__c</field>
+        <readable>true</readable>
+        <editable>false</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Customer__c.Address__c</field>
+        <readable>true</readable>
+        <editable>false</editable>
+    </fieldPermissions>
+</PermissionSet>
