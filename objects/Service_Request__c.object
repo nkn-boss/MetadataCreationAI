@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Service Request</label>
+    <pluralLabel>Service Requests</pluralLabel>
+    <nameField>
+        <label>Service Request Name</label>
+        <type>AutoNumber</type>
+        <displayFormat>SR-{0000}</displayFormat>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+    <fields>
+        <fullName>Customer_Contact_Information__c</fullName>
+        <label>Customer Contact Information</label>
+        <type>Text</type>
+        <length>255</length>
+    </fields>
+    <fields>
+        <fullName>Issue_Description__c</fullName>
+        <label>Issue Description</label>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Priority_Level__c</fullName>
+        <label>Priority Level</label>
+        <type>Picklist</type>
+        <picklist>
+            <picklistValues>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High</fullName>
+                <default>false</default>
+            </picklistValues>
+        </picklist>
+    </fields>
+    <fields>
+        <fullName>Unique_Identifier__c</fullName>
+        <label>Unique Identifier</label>
+        <type>AutoNumber</type>
+        <displayFormat>SR-{0000}</displayFormat>
+    </fields>
+</CustomObject>
