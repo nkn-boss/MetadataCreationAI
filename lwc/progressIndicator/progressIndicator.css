@@ -1,0 +1,6 @@
+.slds-progress__item.completed .slds-progress__marker {
+    background-color: var(--lwc-colorBackgroundButtonBrand);
+}
+.slds-progress__item.active .slds-progress__marker {
+    border-color: var(--lwc-colorBorderButtonBrand);
+}
