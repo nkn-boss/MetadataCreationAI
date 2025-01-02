@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <status>Active</status>
+    <interviewLabel>Service Request Submission</interviewLabel>
+    <label>Service Request Submission Flow</label>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Create_Service_Request</name>
+        <label>Create Service Request</label>
+        <object>Service_Request__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+        <fieldValues>
+            <field>Customer_Contact_Information__c</field>
+            <value>{!Customer_Contact_Information}</value>
+        </fieldValues>
+        <fieldValues>
+            <field>Issue_Description__c</field>
+            <value>{!Issue_Description}</value>
+        </fieldValues>
+        <fieldValues>
+            <field>Priority_Level__c</field>
+            <value>{!Priority_Level}</value>
+        </fieldValues>
+    </recordCreates>
+    <screens>
+        <name>Service_Request_Form</name>
+        <label>Service Request Form</label>
+        <fields>
+            <field>
+                <name>Customer_Contact_Information</name>
+                <label>Customer Contact Information</label>
+                <required>true</required>
+                <dataType>String</dataType>
+            </field>
+            <field>
+                <name>Issue_Description</name>
+                <label>Issue Description</label>
+                <required>true</required>
+                <dataType>String</dataType>
+            </field>
+            <field>
+                <name>Priority_Level</name>
+                <label>Priority Level</label>
+                <required>true</required>
+                <dataType>Picklist</dataType>
+                <picklistValues>
+                    <picklistValue>Low</picklistValue>
+                    <picklistValue>Medium</picklistValue>
+                    <picklistValue>High</picklistValue>
+                </picklistValues>
+            </field>
+        </fields>
+    </screens>
+    <screens>
+        <name>Confirmation_Screen</name>
+        <label>Confirmation</label>
+        <text>This is to confirm that your service request has been submitted successfully.</text>
+    </screens>
+</Flow>
