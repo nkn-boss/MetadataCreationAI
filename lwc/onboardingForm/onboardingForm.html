@@ -1,0 +1,16 @@
+<template>
+    <lightning-progress-indicator current-step={currentStep} type="base" variant="base">
+        <lightning-progress-step label="Personal Details" value="1"></lightning-progress-step>
+        <lightning-progress-step label="Service Preferences" value="2"></lightning-progress-step>
+        <lightning-progress-step label="Additional Information" value="3"></lightning-progress-step>
+    </lightning-progress-indicator>
+    <template if:true={isPersonalDetailsStep}>
+        <c-personal-details onnext={handleNext}></c-personal-details>
+    </template>
+    <template if:true={isServicePreferencesStep}>
+        <c-service-preferences onnext={handleNext} onprevious={handlePrevious}></c-service-preferences>
+    </template>
+    <template if:true={isAdditionalInformationStep}>
+        <c-additional-information onsubmit={handleSubmit} onprevious={handlePrevious}></c-additional-information>
+    </template>
+</template>
