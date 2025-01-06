@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Service Request Form" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Type" value={type} onchange={handleTypeChange}></lightning-input>
+            <lightning-textarea label="Description" value={description} onchange={handleDescriptionChange}></lightning-textarea>
+            <lightning-combobox label="Priority" value={priority} onchange={handlePriorityChange} options={priorityOptions}></lightning-combobox>
+            <lightning-button label="Submit" onclick={handleSubmit}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
