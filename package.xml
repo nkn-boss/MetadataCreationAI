@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>Social_Media_Lead__c</members>
+    <name>CustomObject</name>
+  </types>
+  <types>
+    <members>Social_Media_Lead__c.Platform__c</members>
+    <members>Social_Media_Lead__c.Campaign_Name__c</members>
+    <members>Social_Media_Lead__c.Lead_Details__c</members>
+    <name>CustomField</name>
+  </types>
+  <types>
+    <members>Social_Media_Lead_Import_Flow</members>
+    <name>Flow</name>
+  </types>
+  <types>
+    <members>Leads_by_Platform</members>
+    <members>Campaign_Effectiveness</members>
+    <name>ReportType</name>
+  </types>
+  <version>57.0</version>
+</Package>
