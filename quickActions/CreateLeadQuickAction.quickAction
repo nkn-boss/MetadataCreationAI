@@ -1,0 +1,6 @@
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CreateLeadQuickAction</fullName>
+    <actionType>Create</actionType>
+    <targetObject>Lead</targetObject>
+    <label>Create Lead</label>
+</QuickAction>
