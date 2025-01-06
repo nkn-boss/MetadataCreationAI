@@ -1,0 +1,23 @@
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Service Request Review Permissions</label>
+    <fieldPermissions>
+        <field>ServiceRequest__c.Priority__c</field>
+        <editable>true</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>ServiceRequest__c.Category__c</field>
+        <editable>true</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>ServiceRequest__c.ReviewStatus__c</field>
+        <editable>true</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>ServiceRequest__c.ReviewerNotes__c</field>
+        <editable>true</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+</PermissionSet>
