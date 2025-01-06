@@ -1,0 +1,23 @@
+<Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case-Layout</fullName>
+    <layoutSections>
+        <label>Case Information</label>
+        <layoutColumns>
+            <layoutItems>
+                <field>CaseOrigin__c</field>
+            </layoutItems>
+            <layoutItems>
+                <field>CaseStatus__c</field>
+            </layoutItems>
+            <layoutItems>
+                <field>Priority__c</field>
+            </layoutItems>
+            <layoutItems>
+                <field>Subject__c</field>
+            </layoutItems>
+            <layoutItems>
+                <field>Description__c</field>
+            </layoutItems>
+        </layoutColumns>
+    </layoutSections>
+</Layout>
