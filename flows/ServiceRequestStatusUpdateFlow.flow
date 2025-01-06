@@ -1,0 +1,18 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <status>Active</status>
+    <label>Service Request Status Update Flow</label>
+    <processType>Workflow</processType>
+    <triggerType>RecordChange</triggerType>
+    <object>ServiceRequest__c</object>
+    <action>
+        <name>SendEmail</name>
+        <type>EmailAlert</type>
+        <criteria>ISCHANGED(Status__c)</criteria>
+    </action>
+    <action>
+        <name>SendSMS</name>
+        <type>Apex</type>
+        <apexClass>SendSMSNotification</apexClass>
+        <criteria>ISCHANGED(Status__c)</criteria>
+    </action>
+</Flow>
