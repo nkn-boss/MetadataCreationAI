@@ -1,0 +1,16 @@
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>OnboardingForm_SuccessMessage</fullName>
+        <value>Form submitted successfully</value>
+        <categories>Onboarding</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+    </labels>
+    <labels>
+        <fullName>OnboardingForm_ErrorMessage</fullName>
+        <value>There was an error submitting the form. Please try again.</value>
+        <categories>Onboarding</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+    </labels>
+</CustomLabels>
