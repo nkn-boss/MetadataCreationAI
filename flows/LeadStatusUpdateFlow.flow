@@ -1,0 +1,19 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeadStatusUpdateFlow</fullName>
+    <description>Flow to automate lead status updates and notifications</description>
+    <processType>Flow</processType>
+    <status>Active</status>
+    <triggerType>RecordUpdate</triggerType>
+    <recordUpdate>
+        <object>Lead</object>
+        <criteria>
+            <field>LeadStatus</field>
+            <operation>equals</operation>
+            <value>Qualified</value>
+        </criteria>
+        <actions>
+            <actionType>SendEmail</actionType>
+            <emailTemplate>QualifiedLeadNotification</emailTemplate>
+        </actions>
+    </recordUpdate>
+</Flow>
