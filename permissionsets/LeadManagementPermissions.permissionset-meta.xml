@@ -1,0 +1,36 @@
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeadManagementPermissions</fullName>
+    <label>Lead Management Permissions</label>
+    <fieldPermissions>
+        <field>Lead.Name</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Lead.Email</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Lead.Phone</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Lead.LeadSource</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Lead.LeadStatus</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <objectPermissions>
+        <object>Lead</object>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+    </objectPermissions>
+</PermissionSet>
