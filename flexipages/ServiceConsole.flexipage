@@ -1,0 +1,19 @@
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Service Console for managing service requests</description>
+    <type>AppPage</type>
+    <regions>
+        <region>
+            <components>
+                <component>
+                    <componentType>force:relatedList</componentType>
+                    <attributes>
+                        <attribute>
+                            <name>relatedList</name>
+                            <value>ServiceRequests</value>
+                        </attribute>
+                    </attributes>
+                </component>
+            </components>
+        </region>
+    </regions>
+</FlexiPage>
