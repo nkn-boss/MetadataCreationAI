@@ -1,0 +1,6 @@
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DeleteLeadQuickAction</fullName>
+    <actionType>Delete</actionType>
+    <targetObject>Lead</targetObject>
+    <label>Delete Lead</label>
+</QuickAction>
