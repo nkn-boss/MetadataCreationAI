@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>Customer__c</members>
+    <name>CustomObject</name>
+  </types>
+  <types>
+    <members>Verified__c</members>
+    <name>CustomField</name>
+  </types>
+  <types>
+    <members>EmailFormatValidation</members>
+    <members>PhoneNumberFormatValidation</members>
+    <name>ValidationRule</name>
+  </types>
+  <types>
+    <members>CustomerVerificationTrigger</members>
+    <name>ApexTrigger</name>
+  </types>
+  <types>
+    <members>CustomerVerificationService</members>
+    <name>ApexClass</name>
+  </types>
+  <types>
+    <members>CustomerVerificationFlow</members>
+    <name>Flow</name>
+  </types>
+  <version>57.0</version>
+</Package>
