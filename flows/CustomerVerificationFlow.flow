@@ -1,0 +1,8 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <status>Active</status>
+    <apiVersion>57.0</apiVersion>
+    <processType>Flow</processType>
+    <label>Customer Verification Flow</label>
+    <description>Automates the verification of customer information</description>
+    <!-- Flow elements go here -->
+</Flow>
