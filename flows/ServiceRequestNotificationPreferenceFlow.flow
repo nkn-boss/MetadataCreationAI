@@ -1,0 +1,35 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ServiceRequestNotificationPreferenceFlow</fullName>
+    <label>Service Request Notification Preference Flow</label>
+    <processType>Flow</processType>
+    <status>Active</status>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <recordLookups>
+        <name>GetServiceRequest</name>
+        <object>ServiceRequest__c</object>
+        <outputAssignments>
+            <assignToReference>ServiceRequest</assignToReference>
+            <field>Id</field>
+            <value>{!recordId}</value>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <name>UpdateNotificationPreference</name>
+        <object>ServiceRequest__c</object>
+        <inputAssignments>
+            <field>NotificationOptIn__c</field>
+            <value>{!NotificationOptIn}</value>
+        </inputAssignments>
+        <criteria>
+            <field>Id</field>
+            <operation>equals</operation>
+            <value>{!recordId}</value>
+        </criteria>
+    </recordUpdates>
+</Flow>
