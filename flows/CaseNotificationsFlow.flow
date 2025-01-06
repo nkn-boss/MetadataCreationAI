@@ -1,0 +1,26 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CaseNotificationsFlow</fullName>
+    <status>Active</status>
+    <processType>Flow</processType>
+    <triggerType>RecordUpdate</triggerType>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <recordUpdate>
+        <criteria>
+            <conditions>
+                <field>Case.Status</field>
+                <operator>equals</operator>
+                <value>New</value>
+            </conditions>
+        </criteria>
+        <actions>
+            <actionType>SendEmail</actionType>
+            <emailTemplate>NewCaseNotification</emailTemplate>
+        </actions>
+    </recordUpdate>
+</Flow>
