@@ -1,0 +1,28 @@
+<Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Service Request Layout</description>
+    <layoutSections>
+        <layoutSection>
+            <label>Service Request Information</label>
+            <layoutColumns>
+                <layoutColumn>
+                    <field>Channel__c</field>
+                </layoutColumn>
+                <layoutColumn>
+                    <field>Status__c</field>
+                </layoutColumn>
+                <layoutColumn>
+                    <field>Customer__c</field>
+                </layoutColumn>
+                <layoutColumn>
+                    <field>Agent__c</field>
+                </layoutColumn>
+                <layoutColumn>
+                    <field>Description__c</field>
+                </layoutColumn>
+                <layoutColumn>
+                    <field>Priority__c</field>
+                </layoutColumn>
+            </layoutColumns>
+        </layoutSection>
+    </layoutSections>
+</Layout>
