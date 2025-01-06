@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>Case__c</members>
+    <name>CustomObject</name>
+  </types>
+  <types>
+    <members>Case__c.CaseOrigin</members>
+    <members>Case__c.Type</members>
+    <members>Case__c.Description</members>
+    <members>Case__c.Priority</members>
+    <members>Case__c.Status</members>
+    <members>Case__c.Owner</members>
+    <name>CustomField</name>
+  </types>
+  <types>
+    <members>CaseAssignmentRules</members>
+    <name>AssignmentRule</name>
+  </types>
+  <types>
+    <members>ServiceRequestForm</members>
+    <name>LightningComponentBundle</name>
+  </types>
+  <types>
+    <members>OmniChannelSettings</members>
+    <name>OmniChannelSettings</name>
+  </types>
+  <types>
+    <members>ServiceRequestSubmissionAlert</members>
+    <name>EmailAlert</name>
+  </types>
+  <types>
+    <members>CustomerPortalUser</members>
+    <name>PermissionSet</name>
+  </types>
+  <version>57.0</version>
+</Package>
