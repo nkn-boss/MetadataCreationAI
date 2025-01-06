@@ -1,0 +1,13 @@
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Campaign Effectiveness</label>
+    <baseObject>Campaign</baseObject>
+    <category>Campaign Reports</category>
+    <sections>
+        <columns>
+            <field>NumberOfLeads</field>
+        </columns>
+        <columns>
+            <field>CampaignName</field>
+        </columns>
+    </sections>
+</ReportType>
