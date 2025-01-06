@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>ServiceRequest__c</members>
+    <name>CustomObject</name>
+  </types>
+  <types>
+    <members>Status__c</members>
+    <members>AssignedAgent__c</members>
+    <members>EstimatedResolutionTime__c</members>
+    <name>CustomField</name>
+  </types>
+  <types>
+    <members>ServiceRequestStatusUpdateFlow</members>
+    <name>Flow</name>
+  </types>
+  <types>
+    <members>ServiceRequestStatusEmailAlert</members>
+    <name>EmailAlert</name>
+  </types>
+  <types>
+    <members>ServiceRequestPermissions</members>
+    <name>PermissionSet</name>
+  </types>
+  <version>57.0</version>
+</Package>
