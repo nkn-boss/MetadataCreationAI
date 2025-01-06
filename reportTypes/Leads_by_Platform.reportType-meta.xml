@@ -1,0 +1,13 @@
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Leads by Platform</label>
+    <baseObject>Lead</baseObject>
+    <category>Lead Reports</category>
+    <sections>
+        <columns>
+            <field>LeadSource</field>
+        </columns>
+        <columns>
+            <field>CreatedDate</field>
+        </columns>
+    </sections>
+</ReportType>
