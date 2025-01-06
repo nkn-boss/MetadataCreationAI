@@ -1,0 +1,6 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <status>Active</status>
+    <label>Service Request Review Flow</label>
+    <processType>Flow</processType>
+    <!-- Flow elements and logic to flag requests for review based on criteria -->
+</Flow>
