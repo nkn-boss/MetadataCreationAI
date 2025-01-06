@@ -1,0 +1,21 @@
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <label>Service Request Approval Process</label>
+    <description>Approval process for reviewing service requests</description>
+    <entryCriteria>
+        <booleanFilter>1</booleanFilter>
+        <criteriaItems>
+            <field>ServiceRequest__c.Priority__c</field>
+            <operation>equals</operation>
+            <value>High</value>
+        </criteriaItems>
+    </entryCriteria>
+    <approvalSteps>
+        <approvalStep>
+            <name>Review Step</name>
+            <assignedApprover>
+                <approver>Support_Manager</approver>
+            </assignedApprover>
+        </approvalStep>
+    </approvalSteps>
+</ApprovalProcess>
