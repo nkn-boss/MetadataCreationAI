@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>Service_Request__c</members>
+    <name>CustomObject</name>
+  </types>
+  <types>
+    <members>Service_Request__c.Request_Type__c</members>
+    <members>Service_Request__c.Priority__c</members>
+    <members>Service_Request__c.Customer_Location__c</members>
+    <members>Service_Request__c.Assigned_Team__c</members>
+    <members>Service_Request__c.Status__c</members>
+    <members>Service_Request__c.CreatedDate</members>
+    <members>Service_Request__c.ClosedDate</members>
+    <name>CustomField</name>
+  </types>
+  <types>
+    <members>Service_Request_Reports</members>
+    <name>ReportType</name>
+  </types>
+  <types>
+    <members>Service_Request_Reports_Label</members>
+    <name>CustomLabel</name>
+  </types>
+  <types>
+    <members>Service_Request_Reports_Permission</members>
+    <name>PermissionSet</name>
+  </types>
+  <types>
+    <members>Service_Request_Layout</members>
+    <name>Layout</name>
+  </types>
+  <version>57.0</version>
+</Package>
