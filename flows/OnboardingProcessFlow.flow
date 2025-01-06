@@ -1,0 +1,15 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <processMetadataValues>
+        <name>ObjectType</name>
+        <value>
+            <stringValue>Customer__c</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>TriggerType</name>
+        <value>
+            <stringValue>onCreateOnly</stringValue>
+        </value>
+    </processMetadataValues>
+    <!-- Flow elements go here -->
+</Flow>
