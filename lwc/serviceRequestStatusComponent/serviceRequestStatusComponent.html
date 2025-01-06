@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Service Request Status">
+        <div class="slds-m-around_medium">
+            <lightning-spinner if:true={isLoading}></lightning-spinner>
+            <template if:true={serviceRequest}>
+                <p>Status: {serviceRequest.Status__c}</p>
+                <p>Last Update: {serviceRequest.LastStatusUpdate__c}</p>
+                <p>Details: {serviceRequest.Details__c}</p>
+                <p>Next Steps: {serviceRequest.NextSteps__c}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
