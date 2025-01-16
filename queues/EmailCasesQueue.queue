@@ -1,0 +1,15 @@
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EmailCasesQueue</fullName>
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <email>
+        <email>support@example.com</email>
+    </email>
+    <queueSObject>
+        <sObjectType>Case</sObjectType>
+    </queueSObject>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>SupportAgents</publicGroup>
+        </publicGroups>
+    </queueMembers>
+</Queue>
