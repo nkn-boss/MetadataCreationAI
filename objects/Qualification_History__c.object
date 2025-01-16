@@ -1,0 +1,42 @@
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+  <fullName>Qualification_History__c</fullName>
+  <label>Qualification History</label>
+  <pluralLabel>Qualification Histories</pluralLabel>
+  <nameField>
+    <label>Qualification History Name</label>
+    <type>AutoNumber</type>
+    <displayFormat>QH-{0000}</displayFormat>
+  </nameField>
+  <deploymentStatus>Deployed</deploymentStatus>
+  <sharingModel>ReadWrite</sharingModel>
+  <fields>
+    <fullName>Lead__c</fullName>
+    <label>Lead</label>
+    <type>Lookup</type>
+    <referenceTo>Lead</referenceTo>
+  </fields>
+  <fields>
+    <fullName>Qualification_Date__c</fullName>
+    <label>Qualification Date</label>
+    <type>Date</type>
+  </fields>
+  <fields>
+    <fullName>Qualification_Status__c</fullName>
+    <label>Qualification Status</label>
+    <type>Picklist</type>
+    <picklist>
+      <picklistValues>
+        <fullName>New</fullName>
+        <default>false</default>
+      </picklistValues>
+      <picklistValues>
+        <fullName>Qualified</fullName>
+        <default>false</default>
+      </picklistValues>
+      <picklistValues>
+        <fullName>Unqualified</fullName>
+        <default>false</default>
+      </picklistValues>
+    </picklist>
+  </fields>
+</CustomObject>
