@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>EmailCasesQueue</members>
+    <members>LiveChatCasesQueue</members>
+    <name>Queue</name>
+  </types>
+  <types>
+    <members>CaseAssignmentRule</members>
+    <name>AssignmentRule</name>
+  </types>
+  <types>
+    <members>Automate_Case_Updates_Flow</members>
+    <name>Flow</name>
+  </types>
+  <types>
+    <members>SupportCentral</members>
+    <name>CustomApplication</name>
+  </types>
+  <version>57.0</version>
+</Package>
