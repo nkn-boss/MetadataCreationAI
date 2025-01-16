@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Management_Automation_Flow</fullName>
+    <processType>Flow</processType>
+    <status>Active</status>
+    <variables>
+        <name>leadId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <recordCreates>
+        <fullName>Create_Notification_Record</fullName>
+        <label>Create Notification Record</label>
+        <object>Notification__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+        <inputAssignments>
+            <field>Lead__c</field>
+            <value>{!leadId}</value>
+        </inputAssignments>
+    </recordCreates>
+    <recordUpdates>
+        <fullName>Update_Lead_Status</fullName>
+        <label>Update Lead Status</label>
+        <object>Lead</object>
+        <criteria>
+            <criteriaItems>
+                <field>Id</field>
+                <operation>equals</operation>
+                <value>{!leadId}</value>
+            </criteriaItems>
+        </criteria>
+        <inputAssignments>
+            <field>Status</field>
+            <value>Qualified</value>
+        </inputAssignments>
+    </recordUpdates>
+</Flow>
