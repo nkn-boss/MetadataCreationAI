@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>Lead_Score__c</members>
+    <members>Engagement_Level__c</members>
+    <members>Qualification_Status__c</members>
+    <members>Qualification_History__c.Lead__c</members>
+    <members>Qualification_History__c.Qualification_Date__c</members>
+    <members>Qualification_History__c.Qualification_Status__c</members>
+    <name>CustomField</name>
+  </types>
+  <types>
+    <members>Qualification_History__c</members>
+    <name>CustomObject</name>
+  </types>
+  <types>
+    <members>Automate_Lead_Qualification_Flow</members>
+    <name>Flow</name>
+  </types>
+  <types>
+    <members>Lead_Qualification_Record_Page</members>
+    <name>Layout</name>
+  </types>
+  <version>57.0</version>
+</Package>
