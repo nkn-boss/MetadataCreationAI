@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>Validate_Required_Fields</members>
+    <name>ValidationRule</name>
+  </types>
+  <types>
+    <members>Lead_Assignment_Rule</members>
+    <name>AssignmentRule</name>
+  </types>
+  <types>
+    <members>Lead_Management_Automation_Flow</members>
+    <name>Flow</name>
+  </types>
+  <types>
+    <members>Lead_Record_Page_Custom</members>
+    <name>PageLayout</name>
+  </types>
+  <types>
+    <members>LeadSource</members>
+    <members>LeadStatus</members>
+    <name>PicklistValueSet</name>
+  </types>
+  <version>57.0</version>
+</Package>
