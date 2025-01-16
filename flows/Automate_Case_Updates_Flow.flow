@@ -1,0 +1,30 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Automate_Case_Updates_Flow</fullName>
+    <description>Flow to automate case updates and notifications</description>
+    <status>Active</status>
+    <processType>Flow</processType>
+    <recordUpdate>
+        <name>UpdateCaseStatus</name>
+        <description>Update Case Status based on criteria</description>
+        <criteria>
+            <booleanFilter>1</booleanFilter>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New</value>
+            </criteriaItems>
+        </criteria>
+        <inputAssignments>
+            <field>Case.Status</field>
+            <value>In Progress</value>
+        </inputAssignments>
+    </recordUpdate>
+    <emailAlert>
+        <name>SendCaseCreationNotification</name>
+        <description>Send email notification on case creation</description>
+        <emailTemplate>Case_Creation_Template</emailTemplate>
+        <recipients>
+            <recipientType>Owner</recipientType>
+        </recipients>
+    </emailAlert>
+</Flow>
