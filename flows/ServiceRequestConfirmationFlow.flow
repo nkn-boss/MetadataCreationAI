@@ -1,0 +1,15 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <processType>Flow</processType>
+    <label>Service Request Confirmation Flow</label>
+    <description>Flow to send confirmation email upon service request submission</description>
+    <startElementReference>start</startElementReference>
+    <elements>
+        <action>
+            <name>sendEmail</name>
+            <label>Send Email</label>
+            <description>Send confirmation email to customer</description>
+            <actionType>emailAlert</actionType>
+            <emailAlertName>ServiceRequestConfirmation</emailAlertName>
+        </action>
+    </elements>
+</Flow>
