@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>CRMEmailIntegration</members>
+    <name>ApexClass</name>
+  </types>
+  <types>
+    <members>OnboardingAutomationFlow</members>
+    <name>Flow</name>
+  </types>
+  <types>
+    <members>IntegrationPermissionSet</members>
+    <name>PermissionSet</name>
+  </types>
+  <types>
+    <members>DataSyncReport__c</members>
+    <name>CustomObject</name>
+  </types>
+  <types>
+    <members>DataSyncReport__c.ReportDate__c</members>
+    <members>DataSyncReport__c.Status__c</members>
+    <members>DataSyncReport__c.ErrorMessage__c</members>
+    <name>CustomField</name>
+  </types>
+  <types>
+    <members>DataPrivacyNotice</members>
+    <name>CustomLabel</name>
+  </types>
+  <types>
+    <members>DataSyncReportType</members>
+    <name>ReportType</name>
+  </types>
+  <version>57.0</version>
+</Package>
