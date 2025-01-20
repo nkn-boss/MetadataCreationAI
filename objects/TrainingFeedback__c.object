@@ -1,0 +1,29 @@
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Training Feedback</label>
+    <pluralLabel>Training Feedbacks</pluralLabel>
+    <nameField>
+        <label>Feedback Name</label>
+        <type>Text</type>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+    <fields>
+        <fullName>Feedback__c</fullName>
+        <label>Feedback</label>
+        <type>LongTextArea</type>
+        <length>32000</length>
+    </fields>
+    <fields>
+        <fullName>Rating__c</fullName>
+        <label>Rating</label>
+        <type>Number</type>
+        <precision>2</precision>
+        <scale>0</scale>
+    </fields>
+    <fields>
+        <fullName>TrainingMaterial__c</fullName>
+        <label>Training Material</label>
+        <type>Lookup</type>
+        <referenceTo>TrainingMaterial__c</referenceTo>
+    </fields>
+</CustomObject>
