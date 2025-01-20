@@ -1,0 +1,13 @@
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Compliance Monitoring Report</label>
+    <sections>
+        <name>Compliance Monitoring</name>
+        <columns>
+            <field>Compliance_Monitoring__c.Name</field>
+            <field>Compliance_Monitoring__c.Description__c</field>
+            <field>Compliance_Monitoring__c.Monitoring_Frequency__c</field>
+            <field>Compliance_Monitoring__c.Last_Run_Date__c</field>
+            <field>Compliance_Monitoring__c.Status__c</field>
+        </columns>
+    </sections>
+</ReportType>
