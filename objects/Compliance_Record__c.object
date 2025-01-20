@@ -1,0 +1,69 @@
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Compliance Record</label>
+    <pluralLabel>Compliance Records</pluralLabel>
+    <nameField>
+        <displayFormat>CR-{0000}</displayFormat>
+        <label>Compliance Record Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+    <fields>
+        <fullName>Compliance_Standard__c</fullName>
+        <externalId>false</externalId>
+        <label>Compliance Standard</label>
+        <type>Picklist</type>
+        <picklist>
+            <picklistValues>
+                <fullName>Standard1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Standard2</fullName>
+                <default>false</default>
+            </picklistValues>
+        </picklist>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <type>Picklist</type>
+        <picklist>
+            <picklistValues>
+                <fullName>Compliant</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non-Compliant</fullName>
+                <default>false</default>
+            </picklistValues>
+        </picklist>
+    </fields>
+    <fields>
+        <fullName>Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Due Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Assigned_To__c</fullName>
+        <externalId>false</externalId>
+        <label>Assigned To</label>
+        <type>Lookup</type>
+        <referenceTo>User</referenceTo>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <type>LongTextArea</type>
+        <length>32000</length>
+    </fields>
+    <fields>
+        <fullName>Document_Attachment__c</fullName>
+        <externalId>false</externalId>
+        <label>Document Attachment</label>
+        <type>File</type>
+    </fields>
+</CustomObject>
