@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Assignment Rule Configuration">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Request Type" value={requestType} onchange={handleRequestTypeChange}></lightning-input>
+            <lightning-input label="Priority" value={priority} onchange={handlePriorityChange}></lightning-input>
+            <lightning-button label="Save" onclick={handleSave}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
