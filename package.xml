@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>Compliance_Report__c</members>
+    <name>CustomObject</name>
+  </types>
+  <types>
+    <members>Compliance_Report__c.Name__c</members>
+    <members>Compliance_Report__c.Description__c</members>
+    <members>Compliance_Report__c.Template__c</members>
+    <members>Compliance_Report__c.Generated_Date__c</members>
+    <members>Compliance_Report__c.Status__c</members>
+    <name>CustomField</name>
+  </types>
+  <types>
+    <members>Scheduled_Report_Generation</members>
+    <name>Flow</name>
+  </types>
+  <types>
+    <members>Log_Reporting_Activities</members>
+    <name>ProcessBuilder</name>
+  </types>
+  <types>
+    <members>ComplianceReportComponent</members>
+    <name>LightningComponentBundle</name>
+  </types>
+  <types>
+    <members>Compliance_Report_Layout</members>
+    <name>Layout</name>
+  </types>
+  <types>
+    <members>Compliance_Report_Permissions</members>
+    <name>PermissionSet</name>
+  </types>
+  <version>57.0</version>
+</Package>
