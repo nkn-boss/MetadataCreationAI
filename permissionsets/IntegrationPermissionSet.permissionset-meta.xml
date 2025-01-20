@@ -1,0 +1,12 @@
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Integration Permission Set</label>
+    <description>Permissions for managing CRM and email system integrations</description>
+    <userPermissions>
+        <name>ModifyAllData</name>
+        <enabled>true</enabled>
+    </userPermissions>
+    <userPermissions>
+        <name>ManageFlow</name>
+        <enabled>true</enabled>
+    </userPermissions>
+</PermissionSet>
