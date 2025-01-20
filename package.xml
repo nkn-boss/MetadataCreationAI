@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>TestCase__c</members>
+    <name>CustomObject</name>
+  </types>
+  <types>
+    <members>TestCase__c.Module__c</members>
+    <members>TestCase__c.UserRole__c</members>
+    <members>TestCase__c.IntegrationPoint__c</members>
+    <members>TestCase__c.ScenarioType__c</members>
+    <members>TestCase__c.Status__c</members>
+    <members>TestCase__c.Traceability__c</members>
+    <name>CustomField</name>
+  </types>
+  <types>
+    <members>TestCasePermissionSet</members>
+    <name>PermissionSet</name>
+  </types>
+  <types>
+    <members>TestCaseLabel</members>
+    <name>CustomLabel</name>
+  </types>
+  <version>57.0</version>
+</Package>
