@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>Service_Request__c</members>
+    <name>CustomObject</name>
+  </types>
+  <types>
+    <members>Service_Request__c.Name__c</members>
+    <members>Service_Request__c.Email__c</members>
+    <members>Service_Request__c.Phone__c</members>
+    <members>Service_Request__c.Description__c</members>
+    <members>Service_Request__c.Priority__c</members>
+    <members>Service_Request__c.Tracking_Number__c</members>
+    <name>CustomField</name>
+  </types>
+  <types>
+    <members>ServiceRequest_RequiredFields</members>
+    <name>ValidationRule</name>
+  </types>
+  <types>
+    <members>ServiceRequestForm</members>
+    <name>LightningComponentBundle</name>
+  </types>
+  <types>
+    <members>ServiceRequestController</members>
+    <name>ApexClass</name>
+  </types>
+  <types>
+    <members>ServiceRequestFlow</members>
+    <name>Flow</name>
+  </types>
+  <types>
+    <members>ServiceRequestConfirmation</members>
+    <name>EmailTemplate</name>
+  </types>
+  <version>57.0</version>
+</Package>
