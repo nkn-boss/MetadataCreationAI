@@ -1,0 +1,35 @@
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Data Sync Report</label>
+    <pluralLabel>Data Sync Reports</pluralLabel>
+    <nameField>
+        <label>Report Name</label>
+        <type>Text</type>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+    <fields>
+        <fullName>ReportDate__c</fullName>
+        <label>Report Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <label>Status</label>
+        <type>Picklist</type>
+        <picklist>
+            <picklistValues>
+                <fullName>Success</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Failure</fullName>
+            </picklistValues>
+        </picklist>
+    </fields>
+    <fields>
+        <fullName>ErrorMessage__c</fullName>
+        <label>Error Message</label>
+        <type>LongTextArea</type>
+        <length>32768</length>
+    </fields>
+</CustomObject>
