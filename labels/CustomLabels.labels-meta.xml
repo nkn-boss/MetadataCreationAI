@@ -1,0 +1,7 @@
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ServiceRequestUpdateEventLabel</fullName>
+        <value>Service Request Update Event</value>
+        <protected>false</protected>
+    </labels>
+</CustomLabels>
