@@ -1,0 +1,21 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <processType>Flow</processType>
+    <status>Active</status>
+    <actionType>Scheduled</actionType>
+    <start>
+        <startTime>00:00:00.000Z</startTime>
+        <frequency>Daily</frequency>
+    </start>
+    <action>
+        <actionType>GenerateReport</actionType>
+        <parameters>
+            <parameter>
+                <name>Template</name>
+                <value>PDF</value>
+            </parameter>
+        </parameters>
+    </action>
+    <errorHandling>
+        <sendEmailToAdmin>true</sendEmailToAdmin>
+    </errorHandling>
+</Flow>
