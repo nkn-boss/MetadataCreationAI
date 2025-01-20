@@ -1,0 +1,14 @@
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Engagement Metric Report Type</label>
+    <baseObject>EngagementMetric__c</baseObject>
+    <category>Analytics</category>
+    <deployed>true</deployed>
+    <sections>
+        <columns>
+            <field>MetricType__c</field>
+            <field>Value__c</field>
+            <field>Timestamp__c</field>
+            <field>RelatedCampaign__c</field>
+        </columns>
+    </sections>
+</ReportType>
