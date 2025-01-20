@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>TrainingSession__c</members>
+    <members>UATFeedback__c</members>
+    <members>TestScript__c</members>
+    <members>Survey__c</members>
+    <name>CustomObject</name>
+  </types>
+  <types>
+    <members>TrainingDate__c</members>
+    <members>Trainer__c</members>
+    <members>Feedback__c</members>
+    <members>User__c</members>
+    <members>ImprovementPriority__c</members>
+    <members>ScriptDescription__c</members>
+    <members>TestScenario__c</members>
+    <members>SurveyQuestion__c</members>
+    <members>SurveyResponse__c</members>
+    <name>CustomField</name>
+  </types>
+  <types>
+    <members>ServiceRequestManagementPermissions</members>
+    <name>PermissionSet</name>
+  </types>
+  <version>57.0</version>
+</Package>
