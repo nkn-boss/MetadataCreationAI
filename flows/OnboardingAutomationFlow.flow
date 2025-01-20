@@ -1,0 +1,13 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <processType>Flow</processType>
+    <status>Active</status>
+    <variables>
+        <!-- Define variables for CRM and email data -->
+    </variables>
+    <elements>
+        <!-- Define flow elements for automated workflows -->
+    </elements>
+    <faults>
+        <!-- Define fault paths for error handling -->
+    </faults>
+</Flow>
