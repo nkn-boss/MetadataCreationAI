@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <status>Active</status>
+    <processType>Flow</processType>
+    <label>Service Request Flow</label>
+    <description>Flow to handle service request submission</description>
+    <startElementReference>start</startElementReference>
+    <elements>
+        <element>
+            <name>start</name>
+            <type>Start</type>
+            <connector>
+                <targetReference>createServiceRequest</targetReference>
+            </connector>
+        </element>
+        <element>
+            <name>createServiceRequest</name>
+            <type>RecordCreate</type>
+            <inputAssignments>
+                <inputAssignment>
+                    <field>Service_Request__c.Name__c</field>
+                    <value>{!name}</value>
+                </inputAssignment>
+                <inputAssignment>
+                    <field>Service_Request__c.Email__c</field>
+                    <value>{!email}</value>
+                </inputAssignment>
+                <inputAssignment>
+                    <field>Service_Request__c.Phone__c</field>
+                    <value>{!phone}</value>
+                </inputAssignment>
+                <inputAssignment>
+                    <field>Service_Request__c.Description__c</field>
+                    <value>{!description}</value>
+                </inputAssignment>
+                <inputAssignment>
+                    <field>Service_Request__c.Priority__c</field>
+                    <value>{!priority}</value>
+                </inputAssignment>
+            </inputAssignments>
+            <connector>
+                <targetReference>sendEmail</targetReference>
+            </connector>
+        </element>
+        <element>
+            <name>sendEmail</name>
+            <type>ActionCall</type>
+            <actionName>SendEmail</actionName>
+            <inputAssignments>
+                <inputAssignment>
+                    <field>emailAddress</field>
+                    <value>{!email}</value>
+                </inputAssignment>
+                <inputAssignment>
+                    <field>subject</field>
+                    <value>Service Request Confirmation</value>
+                </inputAssignment>
+                <inputAssignment>
+                    <field>body</field>
+                    <value>Your service request has been received. Tracking Number: {!Tracking_Number__c}</value>
+                </inputAssignment>
+            </inputAssignments>
+        </element>
+    </elements>
+</Flow>
