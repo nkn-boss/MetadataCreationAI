@@ -1,0 +1,33 @@
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Performance Issue</label>
+    <pluralLabel>Performance Issues</pluralLabel>
+    <nameField>
+        <label>Performance Issue Name</label>
+        <type>Text</type>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+    <fields>
+        <fullName>Description__c</fullName>
+        <label>Description</label>
+        <type>LongTextArea</type>
+        <length>32000</length>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <label>Status</label>
+        <type>Picklist</type>
+        <picklist>
+            <picklistValues>
+                <fullName>New</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Progress</fullName>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Resolved</fullName>
+            </picklistValues>
+        </picklist>
+    </fields>
+</CustomObject>
