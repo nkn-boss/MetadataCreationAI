@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>Service_Request__c</members>
+    <name>CustomObject</name>
+  </types>
+  <types>
+    <members>Service_Request__c.Status__c</members>
+    <members>Service_Request__c.Resolution_Time__c</members>
+    <members>Service_Request__c.Agent_Performance__c</members>
+    <name>CustomField</name>
+  </types>
+  <types>
+    <members>ServiceRequestTrackingFlow</members>
+    <name>Flow</name>
+  </types>
+  <types>
+    <members>ServiceRequestManagerPermissions</members>
+    <name>PermissionSet</name>
+  </types>
+  <types>
+    <members>ServiceRequestReports</members>
+    <name>ReportType</name>
+  </types>
+  <types>
+    <members>ServiceRequestDashboard</members>
+    <name>FlexiPage</name>
+  </types>
+  <types>
+    <members>ServiceRequestStatus</members>
+    <members>ServiceRequestKPIs</members>
+    <name>LightningComponentBundle</name>
+  </types>
+  <version>57.0</version>
+</Package>
