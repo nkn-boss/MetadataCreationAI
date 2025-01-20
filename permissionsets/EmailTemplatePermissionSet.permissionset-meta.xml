@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EmailTemplatePermissionSet</fullName>
+    <label>Email Template Permission Set</label>
+    <description>Permission set to manage email templates and flows</description>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ManageEmailTemplates</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ManageFlow</name>
+    </userPermissions>
+</PermissionSet>
