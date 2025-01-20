@@ -1,0 +1,7 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Customer Profile Flow</label>
+    <processType>Flow</processType>
+    <status>Active</status>
+    <triggerType>RecordUpdate</triggerType>
+    <description>Flow to automate the creation and updating of customer profiles</description>
+</Flow>
