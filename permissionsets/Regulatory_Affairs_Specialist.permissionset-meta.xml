@@ -1,0 +1,33 @@
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Regulatory Affairs Specialist</label>
+    <fieldPermissions>
+        <field>Regulatory_Activity__c.Activity_Name__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Regulatory_Activity__c.Status__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Regulatory_Activity__c.Due_Date__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Regulatory_Activity__c.Assigned_To__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Regulatory_Activity__c.Description__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Regulatory_Activity__c.Document_Attachment__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+</PermissionSet>
