@@ -1,0 +1,45 @@
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Automation Rule</label>
+    <pluralLabel>Automation Rules</pluralLabel>
+    <nameField>
+        <label>Automation Rule Name</label>
+        <type>Text</type>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+    <fields>
+        <fullName>Request_Type__c</fullName>
+        <label>Request Type</label>
+        <type>Picklist</type>
+        <picklist>
+            <picklistValues>
+                <fullName>Password Reset</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Account Update</fullName>
+                <default>false</default>
+            </picklistValues>
+        </picklist>
+    </fields>
+    <fields>
+        <fullName>Criteria__c</fullName>
+        <label>Criteria</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Action__c</fullName>
+        <label>Action</label>
+        <type>Picklist</type>
+        <picklist>
+            <picklistValues>
+                <fullName>Password Reset</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Account Update</fullName>
+                <default>false</default>
+            </picklistValues>
+        </picklist>
+    </fields>
+</CustomObject>
