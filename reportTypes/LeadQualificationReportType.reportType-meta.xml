@@ -1,0 +1,15 @@
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeadQualificationReportType</fullName>
+    <label>Lead Qualification Report</label>
+    <baseObject>Lead</baseObject>
+    <category>Lead Reports</category>
+    <deployed>true</deployed>
+    <sections>
+        <masterLabel>Lead Qualification Performance</masterLabel>
+        <columns>
+            <field>Lead.LeadScore__c</field>
+            <field>Lead.Status</field>
+            <field>Lead.CreatedDate</field>
+        </columns>
+    </sections>
+</ReportType>
