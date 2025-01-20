@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>ServiceRequestWorkflow</members>
+    <name>Workflow</name>
+  </types>
+  <types>
+    <members>SLAReminderFlow</members>
+    <name>Flow</name>
+  </types>
+  <types>
+    <members>StatusChangeNotificationProcess</members>
+    <name>ProcessBuilder</name>
+  </types>
+  <types>
+    <members>NotificationSettings__mdt</members>
+    <name>CustomMetadata</name>
+  </types>
+  <types>
+    <members>NotificationHistory__c</members>
+    <name>CustomObject</name>
+  </types>
+  <types>
+    <members>NotificationHistory__c.Notification_Type__c</members>
+    <members>NotificationHistory__c.Notification_Date__c</members>
+    <members>NotificationHistory__c.Recipient__c</members>
+    <name>CustomField</name>
+  </types>
+  <version>57.0</version>
+</Package>
