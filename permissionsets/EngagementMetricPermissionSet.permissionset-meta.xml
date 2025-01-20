@@ -1,0 +1,23 @@
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Engagement Metric Permission Set</label>
+    <fieldPermissions>
+        <field>EngagementMetric__c.MetricType__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>EngagementMetric__c.Value__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>EngagementMetric__c.Timestamp__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>EngagementMetric__c.RelatedCampaign__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+</PermissionSet>
