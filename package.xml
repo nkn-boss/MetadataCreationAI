@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>IntegrationSetup</members>
+    <members>DataSynchronization</members>
+    <members>IntegrationLogs</members>
+    <members>ErrorHandling</members>
+    <members>ScalabilitySecurity</members>
+    <members>IntegrationTesting</members>
+    <name>ApexClass</name>
+  </types>
+  <types>
+    <members>PlatformEventTrigger</members>
+    <name>ApexTrigger</name>
+  </types>
+  <types>
+    <members>IntegrationLog__c</members>
+    <name>CustomObject</name>
+  </types>
+  <types>
+    <members>Status__c</members>
+    <members>ErrorMessage__c</members>
+    <members>Timestamp__c</members>
+    <name>CustomField</name>
+  </types>
+  <types>
+    <members>IntegrationUser</members>
+    <name>PermissionSet</name>
+  </types>
+  <version>57.0</version>
+</Package>
