@@ -1,0 +1,30 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Notification_Flow</fullName>
+    <status>Active</status>
+    <processType>Flow</processType>
+    <startElementReference>newLead</startElementReference>
+    <variables>
+        <name>newLead</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <objectType>Lead__c</objectType>
+    </variables>
+    <elements>
+        <elementReference>sendNotification</elementReference>
+        <elementType>Action</elementType>
+        <actionType>SendEmail</actionType>
+        <actionName>Send New Lead Notification</actionName>
+        <inputs>
+            <name>Recipient</name>
+            <value>Sales_Team_Queue</value>
+        </inputs>
+        <inputs>
+            <name>Subject</name>
+            <value>New Lead Created</value>
+        </inputs>
+        <inputs>
+            <name>Body</name>
+            <value>A new lead has been created: {!newLead.Name__c}</value>
+        </inputs>
+    </elements>
+</Flow>
