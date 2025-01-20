@@ -1,0 +1,54 @@
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Training Material</label>
+    <pluralLabel>Training Materials</pluralLabel>
+    <nameField>
+        <label>Training Material Name</label>
+        <type>Text</type>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+    <fields>
+        <fullName>Content__c</fullName>
+        <label>Content</label>
+        <type>LongTextArea</type>
+        <length>32000</length>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <label>Type</label>
+        <type>Picklist</type>
+        <picklist>
+            <picklistValues>
+                <fullName>Documentation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Guide</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Training Session</fullName>
+                <default>false</default>
+            </picklistValues>
+        </picklist>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <label>Status</label>
+        <type>Picklist</type>
+        <picklist>
+            <picklistValues>
+                <fullName>Draft</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reviewed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Final</fullName>
+                <default>true</default>
+            </picklistValues>
+        </picklist>
+    </fields>
+</CustomObject>
