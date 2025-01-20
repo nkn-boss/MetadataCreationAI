@@ -1,0 +1,40 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeadQualificationFlow</fullName>
+    <label>Lead Qualification Flow</label>
+    <processType>Workflow</processType>
+    <status>Active</status>
+    <interviewLabel>Lead Qualification Flow</interviewLabel>
+    <startElementReference>start</startElementReference>
+    <elements>
+        <actionCalls>
+            <name>AssignLead</name>
+            <actionType>QuickAction</actionType>
+            <quickActionName>Assign</quickActionName>
+            <label>Assign Lead</label>
+            <actionName>AssignLead</actionName>
+        </actionCalls>
+        <assignments>
+            <name>UpdateLeadStatus</name>
+            <label>Update Lead Status</label>
+            <assignmentItems>
+                <field>Lead.Status</field>
+                <value>Qualified</value>
+            </assignmentItems>
+        </assignments>
+        <decisions>
+            <name>EvaluateLeadScore</name>
+            <label>Evaluate Lead Score</label>
+            <defaultConnectorLabel>Default</defaultConnectorLabel>
+            <rules>
+                <name>HighScore</name>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <field>Lead.LeadScore__c</field>
+                    <operator>greaterThan</operator>
+                    <value>80</value>
+                </conditions>
+                <connector>true</connector>
+            </rules>
+        </decisions>
+    </elements>
+</Flow>
