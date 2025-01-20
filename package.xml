@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>RegulatoryLog__c</members>
+    <name>CustomObject</name>
+  </types>
+  <types>
+    <members>RegulatoryLog__c.InteractionDate__c</members>
+    <members>RegulatoryLog__c.InteractionType__c</members>
+    <members>RegulatoryLog__c.Details__c</members>
+    <name>CustomField</name>
+  </types>
+  <types>
+    <members>RegulatoryIntegration</members>
+    <members>RegulatoryChangeHandler</members>
+    <members>RegulatoryScheduler</members>
+    <name>ApexClass</name>
+  </types>
+  <types>
+    <members>RegulatoryValidationTrigger</members>
+    <name>ApexTrigger</name>
+  </types>
+  <types>
+    <members>RegulatoryUpdateNotificationFlow</members>
+    <name>Flow</name>
+  </types>
+  <types>
+    <members>RegulatoryIntegrationPermissions</members>
+    <name>PermissionSet</name>
+  </types>
+  <version>57.0</version>
+</Package>
