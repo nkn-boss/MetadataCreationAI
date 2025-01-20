@@ -1,0 +1,47 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <processType>Flow</processType>
+    <label>Automated Request Processing Flow</label>
+    <status>Active</status>
+    <startElementReference>Start</startElementReference>
+    <elements>
+        <element>
+            <name>Start</name>
+            <type>Start</type>
+            <connector>
+                <targetReference>CheckCriteria</targetReference>
+            </connector>
+        </element>
+        <element>
+            <name>CheckCriteria</name>
+            <type>Decision</type>
+            <connector>
+                <targetReference>ExecuteAction</targetReference>
+                <condition>
+                    <leftValueReference>Criteria__c</leftValueReference>
+                    <operator>equals</operator>
+                    <rightValue>Predefined Criteria</rightValue>
+                </condition>
+            </connector>
+        </element>
+        <element>
+            <name>ExecuteAction</name>
+            <type>Action</type>
+            <actionType>UpdateRecords</actionType>
+            <connector>
+                <targetReference>SendNotification</targetReference>
+            </connector>
+        </element>
+        <element>
+            <name>SendNotification</name>
+            <type>Action</type>
+            <actionType>SendEmail</actionType>
+            <connector>
+                <targetReference>End</targetReference>
+            </connector>
+        </element>
+        <element>
+            <name>End</name>
+            <type>End</type>
+        </element>
+    </elements>
+</Flow>
