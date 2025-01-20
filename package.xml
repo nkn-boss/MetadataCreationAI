@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>DataValidationBatch</members>
+    <members>DataValidationScheduler</members>
+    <name>ApexClass</name>
+  </types>
+  <types>
+    <members>Data_Discrepancy__c</members>
+    <name>CustomObject</name>
+  </types>
+  <types>
+    <members>Data_Discrepancy__c.CustomObject__cId__c</members>
+    <members>Data_Discrepancy__c.Old_Value__c</members>
+    <members>Data_Discrepancy__c.New_Value__c</members>
+    <name>CustomField</name>
+  </types>
+  <types>
+    <members>Ensure_Data_Consistency</members>
+    <name>ValidationRule</name>
+  </types>
+  <types>
+    <members>DataValidationPermissions</members>
+    <name>PermissionSet</name>
+  </types>
+  <version>57.0</version>
+</Package>
