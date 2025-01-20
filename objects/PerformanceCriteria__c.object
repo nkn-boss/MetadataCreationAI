@@ -1,0 +1,31 @@
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Performance Criteria</label>
+    <pluralLabel>Performance Criterias</pluralLabel>
+    <nameField>
+        <label>Performance Criteria Name</label>
+        <type>Text</type>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+    <fields>
+        <fullName>ResponseTime__c</fullName>
+        <label>Response Time</label>
+        <type>Number</type>
+        <precision>18</precision>
+        <scale>2</scale>
+    </fields>
+    <fields>
+        <fullName>Throughput__c</fullName>
+        <label>Throughput</label>
+        <type>Number</type>
+        <precision>18</precision>
+        <scale>2</scale>
+    </fields>
+    <fields>
+        <fullName>ResourceUtilization__c</fullName>
+        <label>Resource Utilization</label>
+        <type>Percent</type>
+        <precision>3</precision>
+        <scale>2</scale>
+    </fields>
+</CustomObject>
