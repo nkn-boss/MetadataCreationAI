@@ -1,0 +1,18 @@
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Feedback Report</label>
+    <sections>
+        <section>
+            <columns>
+                <column>
+                    <field>Rating__c</field>
+                </column>
+                <column>
+                    <field>Comments__c</field>
+                </column>
+                <column>
+                    <field>Service_Request__c</field>
+                </column>
+            </columns>
+        </section>
+    </sections>
+</ReportType>
