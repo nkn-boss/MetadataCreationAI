@@ -1,0 +1,28 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <processType>Schedule-triggered</processType>
+    <label>Regulatory Update Scheduled Flow</label>
+    <description>Flow to automatically receive and process updates on new regulations.</description>
+    <start>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startTime>00:00:00.000Z</startTime>
+        </schedule>
+    </start>
+    <actionCalls>
+        <name>FetchRegulatoryUpdates</name>
+        <actionName>RegulatorySystem.FetchUpdates</actionName>
+        <actionType>apex</actionType>
+    </actionCalls>
+    <recordCreates>
+        <name>CreateRegulatoryUpdate</name>
+        <object>Regulatory_Update__c</object>
+        <inputAssignments>
+            <field>Received_Date__c</field>
+            <value>{!FetchRegulatoryUpdates.ReceivedDate}</value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status__c</field>
+            <value>New</value>
+        </inputAssignments>
+    </recordCreates>
+</Flow>
