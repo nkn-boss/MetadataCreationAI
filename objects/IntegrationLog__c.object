@@ -1,0 +1,11 @@
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Integration Log</label>
+    <pluralLabel>Integration Logs</pluralLabel>
+    <nameField>
+        <type>Text</type>
+        <label>Integration Log Name</label>
+        <fullName>IntegrationLogName__c</fullName>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>
