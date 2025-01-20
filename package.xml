@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>Feedback__c</members>
+    <name>CustomObject</name>
+  </types>
+  <types>
+    <members>Feedback__c.Rating__c</members>
+    <members>Feedback__c.Comments__c</members>
+    <members>Feedback__c.Service_Request__c</members>
+    <name>CustomField</name>
+  </types>
+  <types>
+    <members>FeedbackForm</members>
+    <name>LightningComponentBundle</name>
+  </types>
+  <types>
+    <members>SendFeedbackRequestFlow</members>
+    <name>Flow</name>
+  </types>
+  <types>
+    <members>FeedbackRequestEmailTemplate</members>
+    <name>EmailTemplate</name>
+  </types>
+  <types>
+    <members>FeedbackReportType</members>
+    <name>ReportType</name>
+  </types>
+  <types>
+    <members>FeedbackPermissionSet</members>
+    <name>PermissionSet</name>
+  </types>
+  <version>57.0</version>
+</Package>
