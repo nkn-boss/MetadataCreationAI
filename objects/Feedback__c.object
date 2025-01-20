@@ -1,0 +1,30 @@
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Feedback</label>
+    <pluralLabel>Feedbacks</pluralLabel>
+    <nameField>
+        <label>Feedback Name</label>
+        <type>AutoNumber</type>
+        <displayFormat>FB-{0000}</displayFormat>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+    <fields>
+        <fullName>Rating__c</fullName>
+        <label>Rating</label>
+        <type>Number</type>
+        <precision>2</precision>
+        <scale>0</scale>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <label>Comments</label>
+        <type>LongTextArea</type>
+        <length>32000</length>
+    </fields>
+    <fields>
+        <fullName>Service_Request__c</fullName>
+        <label>Service Request</label>
+        <type>Lookup</type>
+        <referenceTo>Case</referenceTo>
+    </fields>
+</CustomObject>
