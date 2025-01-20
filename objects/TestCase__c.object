@@ -1,0 +1,68 @@
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Test Case</label>
+    <pluralLabel>Test Cases</pluralLabel>
+    <nameField>
+        <label>Test Case Name</label>
+        <type>Text</type>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+    <fields>
+        <fullName>Module__c</fullName>
+        <label>Module</label>
+        <type>Text</type>
+        <length>255</length>
+    </fields>
+    <fields>
+        <fullName>UserRole__c</fullName>
+        <label>User Role</label>
+        <type>Text</type>
+        <length>255</length>
+    </fields>
+    <fields>
+        <fullName>IntegrationPoint__c</fullName>
+        <label>Integration Point</label>
+        <type>Text</type>
+        <length>255</length>
+    </fields>
+    <fields>
+        <fullName>ScenarioType__c</fullName>
+        <label>Scenario Type</label>
+        <type>Picklist</type>
+        <picklist>
+            <picklistValues>
+                <fullName>Positive</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Negative</fullName>
+                <default>false</default>
+            </picklistValues>
+        </picklist>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <label>Status</label>
+        <type>Picklist</type>
+        <picklist>
+            <picklistValues>
+                <fullName>Draft</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reviewed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+        </picklist>
+    </fields>
+    <fields>
+        <fullName>Traceability__c</fullName>
+        <label>Traceability</label>
+        <type>Text</type>
+        <length>255</length>
+    </fields>
+</CustomObject>
