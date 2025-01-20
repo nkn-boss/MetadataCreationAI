@@ -1,0 +1,13 @@
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Data Migration Permissions</label>
+    <fieldPermissions>
+        <field>MigrationErrorLog__c.ErrorMessage__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>MigrationErrorLog__c.RecordId__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+</PermissionSet>
