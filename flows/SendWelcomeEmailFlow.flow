@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <label>Send Welcome Email Flow</label>
+    <description>Flow to send a welcome email upon account creation</description>
+    <interviewLabel>Send Welcome Email</interviewLabel>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <start>
+        <startElementReference>startElement</startElementReference>
+    </start>
+    <actionCalls>
+        <name>SendEmail</name>
+        <label>Send Email</label>
+        <actionName>emailAlert</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>emailSent</targetReference>
+        </connector>
+        <inputParameters>
+            <name>emailTemplateId</name>
+            <value>
+                <stringValue>WelcomeEmailTemplate</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipient</name>
+            <value>
+                <stringValue>{!Account.OwnerId}</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <decisions>
+        <name>emailSent</name>
+        <label>Email Sent</label>
+        <locationX>200</locationX>
+        <locationY>100</locationY>
+    </decisions>
+</Flow>
