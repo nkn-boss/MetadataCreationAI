@@ -1,0 +1,7 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LicenseApprovalFlow</fullName>
+    <label>License Approval Flow</label>
+    <processType>Workflow</processType>
+    <status>Active</status>
+    <!-- Flow content for license approval and issuance -->
+</Flow>
