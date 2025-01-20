@@ -1,0 +1,15 @@
+<AssignmentRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeadAssignmentRule</fullName>
+    <active>true</active>
+    <ruleEntry>
+        <criteriaItems>
+            <field>Lead.Status</field>
+            <operation>equals</operation>
+            <value>Qualified</value>
+        </criteriaItems>
+        <assignedTo>
+            <type>Queue</type>
+            <value>SalesTeamQueue</value>
+        </assignedTo>
+    </ruleEntry>
+</AssignmentRule>
