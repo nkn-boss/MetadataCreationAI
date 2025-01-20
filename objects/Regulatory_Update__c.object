@@ -1,0 +1,47 @@
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Regulatory Update</label>
+    <pluralLabel>Regulatory Updates</pluralLabel>
+    <nameField>
+        <label>Regulatory Update Name</label>
+        <type>Text</type>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+    <fields>
+        <fullName>Name__c</fullName>
+        <label>Name</label>
+        <type>Text</type>
+        <length>255</length>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <label>Description</label>
+        <type>LongTextArea</type>
+        <length>32768</length>
+    </fields>
+    <fields>
+        <fullName>Source__c</fullName>
+        <label>Source</label>
+        <type>Text</type>
+        <length>255</length>
+    </fields>
+    <fields>
+        <fullName>Received_Date__c</fullName>
+        <label>Received Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <label>Status</label>
+        <type>Picklist</type>
+        <picklist>
+            <picklistValues>
+                <fullName>New</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Processed</fullName>
+            </picklistValues>
+        </picklist>
+    </fields>
+</CustomObject>
