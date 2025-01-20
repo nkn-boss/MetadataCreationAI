@@ -1,0 +1,33 @@
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Training Material Access</label>
+    <fieldPermissions>
+        <field>TrainingMaterial__c.Content__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>TrainingMaterial__c.Type__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>TrainingMaterial__c.Status__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>TrainingFeedback__c.Feedback__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>TrainingFeedback__c.Rating__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>TrainingFeedback__c.TrainingMaterial__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+</PermissionSet>
