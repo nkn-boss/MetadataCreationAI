@@ -1,0 +1,24 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <processType>ScheduledFlow</processType>
+    <label>Compliance Monitoring Scheduled Flow</label>
+    <start>
+        <schedule>
+            <frequency>Daily</frequency>
+        </schedule>
+    </start>
+    <actionCalls>
+        <name>CheckCompliance</name>
+        <label>Check Compliance</label>
+        <actionName>Check_Compliance_Action</actionName>
+    </actionCalls>
+    <recordUpdates>
+        <name>UpdateLastRunDate</name>
+        <label>Update Last Run Date</label>
+        <object>Compliance_Monitoring__c</object>
+        <criteria>
+            <field>Last_Run_Date__c</field>
+            <operator>equals</operator>
+            <value>{!$Flow.CurrentDate}</value>
+        </criteria>
+    </recordUpdates>
+</Flow>
