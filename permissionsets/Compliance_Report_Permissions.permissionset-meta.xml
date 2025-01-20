@@ -1,0 +1,28 @@
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Compliance Report Permissions</label>
+    <fieldPermissions>
+        <field>Compliance_Report__c.Name__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Compliance_Report__c.Description__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Compliance_Report__c.Template__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Compliance_Report__c.Generated_Date__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Compliance_Report__c.Status__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+</PermissionSet>
