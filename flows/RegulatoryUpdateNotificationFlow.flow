@@ -1,0 +1,21 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Regulatory Update Notification Flow</label>
+    <description>Flow to send notifications for regulatory updates</description>
+    <processType>Flow</processType>
+    <status>Active</status>
+    <startElementReference>Start</startElementReference>
+    <elements>
+        <element>
+            <name>SendEmail</name>
+            <type>emailAlert</type>
+            <label>Send Email Notification</label>
+            <description>Send email notification for regulatory update</description>
+        </element>
+        <element>
+            <name>PostToChatter</name>
+            <type>chatterPost</type>
+            <label>Post to Chatter</label>
+            <description>Post update to Chatter</description>
+        </element>
+    </elements>
+</Flow>
