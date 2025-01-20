@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Compliance Report">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Report Name" value={reportName}></lightning-input>
+            <lightning-textarea label="Description" value={description}></lightning-textarea>
+            <lightning-combobox label="Template" options={templateOptions} value={template}></lightning-combobox>
+            <lightning-button label="Generate Report" onclick={handleGenerate}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
