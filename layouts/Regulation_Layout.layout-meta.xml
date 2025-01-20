@@ -1,0 +1,28 @@
+<Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Regulation__c-Layout</fullName>
+    <layoutSections>
+        <layoutSection>
+            <label>Regulation Information</label>
+            <layoutColumns>
+                <layoutItems>
+                    <field>Name</field>
+                </layoutItems>
+                <layoutItems>
+                    <field>Description__c</field>
+                </layoutItems>
+                <layoutItems>
+                    <field>Region__c</field>
+                </layoutItems>
+                <layoutItems>
+                    <field>Industry__c</field>
+                </layoutItems>
+                <layoutItems>
+                    <field>Effective_Date__c</field>
+                </layoutItems>
+                <layoutItems>
+                    <field>Status__c</field>
+                </layoutItems>
+            </layoutColumns>
+        </layoutSection>
+    </layoutSections>
+</Layout>
