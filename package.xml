@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>Regulation__c</members>
+    <name>CustomObject</name>
+  </types>
+  <types>
+    <members>Regulation__c.Description__c</members>
+    <members>Regulation__c.Region__c</members>
+    <members>Regulation__c.Industry__c</members>
+    <members>Regulation__c.Effective_Date__c</members>
+    <members>Regulation__c.Status__c</members>
+    <name>CustomField</name>
+  </types>
+  <types>
+    <members>CheckNewRegulations</members>
+    <name>Flow</name>
+  </types>
+  <types>
+    <members>NewRegulationNotification</members>
+    <name>ProcessBuilder</name>
+  </types>
+  <types>
+    <members>RegulationDetails</members>
+    <name>LightningComponentBundle</name>
+  </types>
+  <types>
+    <members>RegulationTrackingPermissions</members>
+    <name>PermissionSet</name>
+  </types>
+  <types>
+    <members>Regulation_Layout</members>
+    <name>Layout</name>
+  </types>
+  <version>57.0</version>
+</Package>
