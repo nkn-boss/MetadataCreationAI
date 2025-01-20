@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Service Request</label>
+    <pluralLabel>Service Requests</pluralLabel>
+    <nameField>
+        <label>Service Request Name</label>
+        <type>Text</type>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+    <fields>
+        <fullName>Name__c</fullName>
+        <label>Name</label>
+        <type>Text</type>
+        <length>255</length>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <label>Email</label>
+        <type>Email</type>
+    </fields>
+    <fields>
+        <fullName>Phone__c</fullName>
+        <label>Phone</label>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <label>Description</label>
+        <type>LongTextArea</type>
+        <length>32000</length>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Priority__c</fullName>
+        <label>Priority</label>
+        <type>Picklist</type>
+        <picklist>
+            <picklistValues>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High</fullName>
+                <default>true</default>
+            </picklistValues>
+        </picklist>
+    </fields>
+    <fields>
+        <fullName>Tracking_Number__c</fullName>
+        <label>Tracking Number</label>
+        <type>AutoNumber</type>
+        <displayFormat>SR-{00000}</displayFormat>
+    </fields>
+</CustomObject>
