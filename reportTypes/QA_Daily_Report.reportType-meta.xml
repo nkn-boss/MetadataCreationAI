@@ -1,0 +1,13 @@
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>TestExecution__c</baseObject>
+    <category>QA Reports</category>
+    <description>Daily QA Report including test execution status, defect status, and key metrics</description>
+    <label>QA Daily Report</label>
+    <sections>
+        <columns>
+            <field>TestExecutionStatus__c</field>
+            <field>DefectStatus__c</field>
+            <field>KeyMetrics__c</field>
+        </columns>
+    </sections>
+</ReportType>
