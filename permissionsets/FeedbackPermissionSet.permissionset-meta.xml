@@ -1,0 +1,25 @@
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Feedback Permission Set</label>
+    <fieldPermissions>
+        <field>Feedback__c.Rating__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Feedback__c.Comments__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Feedback__c.Service_Request__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <objectPermissions>
+        <object>Feedback__c</object>
+        <allowRead>true</allowRead>
+        <allowCreate>true</allowCreate>
+        <allowEdit>true</allowEdit>
+        <allowDelete>false</allowDelete>
+    </objectPermissions>
+</PermissionSet>
