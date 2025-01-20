@@ -1,0 +1,29 @@
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Data Discrepancy</label>
+    <pluralLabel>Data Discrepancies</pluralLabel>
+    <nameField>
+        <label>Discrepancy Number</label>
+        <type>AutoNumber</type>
+        <displayFormat>DIS-{0000}</displayFormat>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+    <fields>
+        <fullName>CustomObject__cId__c</fullName>
+        <label>Custom Object ID</label>
+        <type>Lookup</type>
+        <referenceTo>CustomObject__c</referenceTo>
+    </fields>
+    <fields>
+        <fullName>Old_Value__c</fullName>
+        <label>Old Value</label>
+        <type>Text</type>
+        <length>255</length>
+    </fields>
+    <fields>
+        <fullName>New_Value__c</fullName>
+        <label>New Value</label>
+        <type>Text</type>
+        <length>255</length>
+    </fields>
+</CustomObject>
