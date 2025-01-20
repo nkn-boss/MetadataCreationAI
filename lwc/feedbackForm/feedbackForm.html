@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Feedback Form">
+        <div class="slds-p-around_medium">
+            <lightning-input type="number" label="Rating" value={rating} onchange={handleRatingChange}></lightning-input>
+            <lightning-textarea label="Comments" value={comments} onchange={handleCommentsChange}></lightning-textarea>
+            <lightning-button label="Submit" onclick={handleSubmit}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
