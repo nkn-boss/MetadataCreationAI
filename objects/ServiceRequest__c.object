@@ -1,0 +1,39 @@
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Service Request</label>
+    <pluralLabel>Service Requests</pluralLabel>
+    <nameField>
+        <label>Service Request Name</label>
+        <type>Text</type>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+    <fields>
+        <fullName>Status__c</fullName>
+        <label>Status</label>
+        <type>Picklist</type>
+        <picklist>
+            <picklistValues>
+                <fullName>New</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </picklistValues>
+        </picklist>
+    </fields>
+    <fields>
+        <fullName>StatusHistory__c</fullName>
+        <label>Status History</label>
+        <type>LongTextArea</type>
+        <length>32000</length>
+    </fields>
+</CustomObject>
