@@ -1,0 +1,18 @@
+<Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interaction__c-Layout</fullName>
+    <layoutSections>
+        <layoutSection>
+            <label>Interaction Information</label>
+            <layoutColumns>
+                <layoutColumn>
+                    <fieldItems>
+                        <field>InteractionType__c</field>
+                        <field>Timestamp__c</field>
+                        <field>Description__c</field>
+                        <field>RelatedCustomer__c</field>
+                    </fieldItems>
+                </layoutColumn>
+            </layoutColumns>
+        </layoutSection>
+    </layoutSections>
+</Layout>
