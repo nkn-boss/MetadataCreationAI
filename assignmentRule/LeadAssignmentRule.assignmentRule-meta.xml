@@ -1,0 +1,23 @@
+<AssignmentRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <ruleEntry>
+        <criteriaItems>
+            <field>Lead.Territory__c</field>
+            <operation>equals</operation>
+            <value>North</value>
+        </criteriaItems>
+        <assignedTo>
+            <user>005XXXXXXXXXXXX</user>
+        </assignedTo>
+    </ruleEntry>
+    <ruleEntry>
+        <criteriaItems>
+            <field>Lead.ProductInterest__c</field>
+            <operation>equals</operation>
+            <value>Product A</value>
+        </criteriaItems>
+        <assignedTo>
+            <user>005XXXXXXXXXXXX</user>
+        </assignedTo>
+    </ruleEntry>
+</AssignmentRule>

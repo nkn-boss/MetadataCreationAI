@@ -1,0 +1,11 @@
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>LeadAssignmentRule__c</baseObject>
+    <label>Lead Assignment Report</label>
+    <sections>
+        <columns>
+            <field>Criteria__c</field>
+            <field>AssignedTo__c</field>
+            <field>Active__c</field>
+        </columns>
+    </sections>
+</ReportType>
