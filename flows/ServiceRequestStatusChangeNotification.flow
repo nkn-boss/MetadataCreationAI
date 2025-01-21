@@ -1,0 +1,38 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <processType>Flow</processType>
+    <label>Service Request Status Change Notification</label>
+    <description>Notifies customer of status changes in service requests</description>
+    <startElementReference>start</startElementReference>
+    <status>Active</status>
+    <apiVersion>57.0</apiVersion>
+    <elements>
+        <element xsi:type="Start">
+            <name>start</name>
+            <triggerType>RecordUpdate</triggerType>
+            <object>ServiceRequest__c</object>
+            <filterLogic>AND</filterLogic>
+            <filters>
+                <field>ServiceRequest__c.Status__c</field>
+                <operator>Changed</operator>
+            </filters>
+        </element>
+        <element xsi:type="ActionCall">
+            <name>sendEmail</name>
+            <actionName>SendEmail</actionName>
+            <inputParameters>
+                <inputParameter>
+                    <name>emailAddresses</name>
+                    <value>{!record.CustomerEmail__c}</value>
+                </inputParameter>
+                <inputParameter>
+                    <name>subject</name>
+                    <value>Service Request Status Update</value>
+                </inputParameter>
+                <inputParameter>
+                    <name>body</name>
+                    <value>Your service request status has been updated to {!record.Status__c}</value>
+                </inputParameter>
+            </inputParameters>
+        </element>
+    </elements>
+</Flow>

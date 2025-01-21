@@ -1,15 +1,27 @@
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label>Service Request</label>
-    <pluralLabel>Service Requests</pluralLabel>
+    <label>Support Ticket</label>
+    <pluralLabel>Support Tickets</pluralLabel>
     <nameField>
-        <label>Service Request Number</label>
+        <label>Support Ticket Number</label>
         <type>AutoNumber</type>
-        <displayFormat>SR-{0000}</displayFormat>
+        <displayFormat>ST-{0000}</displayFormat>
+        <fullName>Name</fullName>
     </nameField>
     <deploymentStatus>Deployed</deploymentStatus>
     <sharingModel>ReadWrite</sharingModel>
-    <deploymentStatus>Deployed</deploymentStatus>
-    <sharingModel>ReadWrite</sharingModel>
+    <fields>
+        <fullName>Subject__c</fullName>
+        <label>Subject</label>
+        <type>Text</type>
+        <length>255</length>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <label>Description</label>
+        <type>LongTextArea</type>
+        <length>32000</length>
+        <visibleLines>3</visibleLines>
+    </fields>
     <fields>
         <fullName>Status__c</fullName>
         <label>Status</label>
@@ -24,19 +36,9 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Resolved</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
                 <fullName>Closed</fullName>
                 <default>false</default>
             </picklistValues>
         </picklist>
-    </fields>
-    <fields>
-        <fullName>StatusHistory__c</fullName>
-        <label>Status History</label>
-        <type>LongTextArea</type>
-        <length>32000</length>
     </fields>
 </CustomObject>

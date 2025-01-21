@@ -1,0 +1,28 @@
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Lead Assignment Rule</label>
+    <pluralLabel>Lead Assignment Rules</pluralLabel>
+    <nameField>
+        <label>Lead Assignment Rule Name</label>
+        <type>Text</type>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+    <fields>
+        <fullName>Criteria__c</fullName>
+        <label>Criteria</label>
+        <type>TextArea</type>
+        <length>255</length>
+    </fields>
+    <fields>
+        <fullName>AssignedTo__c</fullName>
+        <label>Assigned To</label>
+        <type>Lookup</type>
+        <referenceTo>User</referenceTo>
+    </fields>
+    <fields>
+        <fullName>Active__c</fullName>
+        <label>Active</label>
+        <type>Checkbox</type>
+        <defaultValue>true</defaultValue>
+    </fields>
+</CustomObject>

@@ -1,0 +1,33 @@
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Customer Profile</label>
+    <pluralLabel>Customer Profiles</pluralLabel>
+    <nameField>
+        <label>Customer Profile Name</label>
+        <type>Text</type>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+    <fields>
+        <fullName>Name__c</fullName>
+        <label>Name</label>
+        <type>Text</type>
+        <length>255</length>
+    </fields>
+    <fields>
+        <fullName>Contact_Details__c</fullName>
+        <label>Contact Details</label>
+        <type>Text</type>
+        <length>255</length>
+    </fields>
+    <fields>
+        <fullName>Purchase_History__c</fullName>
+        <label>Purchase History</label>
+        <type>Lookup</type>
+        <referenceTo>Order</referenceTo>
+    </fields>
+    <fields>
+        <fullName>Engagement_Metrics__c</fullName>
+        <label>Engagement Metrics</label>
+        <type>Number</type>
+    </fields>
+</CustomObject>

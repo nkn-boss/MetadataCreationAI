@@ -1,0 +1,27 @@
+<Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Profile__c-Layout</fullName>
+    <layoutSections>
+        <editHeading>true</editHeading>
+        <label>Customer Profile Information</label>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Name__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Contact_Details__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Purchase_History__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Engagement_Metrics__c</field>
+            </layoutItems>
+        </layoutColumns>
+    </layoutSections>
+</Layout>

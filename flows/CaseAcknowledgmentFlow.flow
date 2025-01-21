@@ -1,0 +1,48 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CaseAcknowledgmentFlow</fullName>
+    <description>Flow to send acknowledgment email upon case creation</description>
+    <startElementReference>start</startElementReference>
+    <status>Active</status>
+    <processMetadataValues>
+        <name>ObjectType</name>
+        <value>
+            <stringValue>Case</stringValue>
+        </value>
+    </processMetadataValues>
+    <actionCalls>
+        <name>sendAcknowledgmentEmail</name>
+        <actionName>sendEmail</actionName>
+        <actionType>emailAlert</actionType>
+        <label>Send Acknowledgment Email</label>
+        <inputParameters>
+            <name>emailAddress</name>
+            <value>
+                <stringValue>{!Case.ContactEmail}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>caseNumber</name>
+            <value>
+                <stringValue>{!Case.CaseNumber}</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <recordCreates>
+        <name>createCase</name>
+        <label>Create Case</label>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+        <inputParameters>
+            <name>Subject</name>
+            <value>
+                <stringValue>{!Email.Subject}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>Description</name>
+            <value>
+                <stringValue>{!Email.Body}</stringValue>
+            </value>
+        </inputParameters>
+    </recordCreates>
+</Flow>

@@ -1,0 +1,36 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <processMetadataValues>
+        <name>ObjectType</name>
+        <value>
+            <stringValue>Lead</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>TriggerType</name>
+        <value>
+            <stringValue>onCreateOnly</stringValue>
+        </value>
+    </processMetadataValues>
+    <actionCalls>
+        <name>NotifySalesRep</name>
+        <actionName>SendEmail</actionName>
+        <parameters>
+            <name>Recipient</name>
+            <value>
+                <stringValue>{!Lead.OwnerId}</stringValue>
+            </value>
+        </parameters>
+        <parameters>
+            <name>Subject</name>
+            <value>
+                <stringValue>New Lead Assignment</stringValue>
+            </value>
+        </parameters>
+        <parameters>
+            <name>Body</name>
+            <value>
+                <stringValue>You have been assigned a new lead: {!Lead.Name}</stringValue>
+            </value>
+        </parameters>
+    </actionCalls>
+</Flow>

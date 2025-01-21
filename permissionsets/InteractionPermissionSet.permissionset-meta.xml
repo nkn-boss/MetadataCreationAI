@@ -1,0 +1,23 @@
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Interaction Permission Set</label>
+    <fieldPermissions>
+        <field>Interaction__c.InteractionType__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Interaction__c.Timestamp__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Interaction__c.Description__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Interaction__c.RelatedCustomer__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+</PermissionSet>
