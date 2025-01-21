@@ -1,0 +1,15 @@
+<AssignmentRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ServiceRequestAssignmentRule</fullName>
+    <active>true</active>
+    <ruleEntry>
+        <criteriaItems>
+            <field>ServiceRequest__c.Priority__c</field>
+            <operation>equals</operation>
+            <value>High</value>
+        </criteriaItems>
+        <assignedTo>
+            <type>Queue</type>
+            <name>HighPriorityQueue</name>
+        </assignedTo>
+    </ruleEntry>
+</AssignmentRule>

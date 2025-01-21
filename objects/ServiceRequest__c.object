@@ -2,9 +2,12 @@
     <label>Service Request</label>
     <pluralLabel>Service Requests</pluralLabel>
     <nameField>
-        <label>Service Request Name</label>
-        <type>Text</type>
+        <label>Service Request Number</label>
+        <type>AutoNumber</type>
+        <displayFormat>SR-{0000}</displayFormat>
     </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
     <deploymentStatus>Deployed</deploymentStatus>
     <sharingModel>ReadWrite</sharingModel>
     <fields>

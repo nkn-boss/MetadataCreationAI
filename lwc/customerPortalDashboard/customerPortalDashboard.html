@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="My Service Requests">
+        <template if:true={serviceRequests.data}>
+            <lightning-datatable data={serviceRequests.data} columns={columns} key-field="Id"></lightning-datatable>
+        </template>
+        <template if:true={serviceRequests.error}>
+            <c-error-panel errors={serviceRequests.error}></c-error-panel>
+        </template>
+    </lightning-card>
+</template>
