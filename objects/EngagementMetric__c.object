@@ -1,0 +1,52 @@
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Engagement Metric</label>
+    <pluralLabel>Engagement Metrics</pluralLabel>
+    <nameField>
+        <displayFormat>EM-{0000}</displayFormat>
+        <label>Engagement Metric Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+    <fields>
+        <fullName>MetricType__c</fullName>
+        <externalId>false</externalId>
+        <label>Metric Type</label>
+        <type>Picklist</type>
+        <picklist>
+            <picklistValues>
+                <fullName>Email Open</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Click-Through</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Social Media Interaction</fullName>
+                <default>false</default>
+            </picklistValues>
+        </picklist>
+    </fields>
+    <fields>
+        <fullName>Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Value</label>
+        <type>Number</type>
+        <precision>18</precision>
+        <scale>2</scale>
+    </fields>
+    <fields>
+        <fullName>Timestamp__c</fullName>
+        <externalId>false</externalId>
+        <label>Timestamp</label>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>RelatedCampaign__c</fullName>
+        <externalId>false</externalId>
+        <label>Related Campaign</label>
+        <type>Lookup</type>
+        <referenceTo>Campaign</referenceTo>
+    </fields>
+</CustomObject>

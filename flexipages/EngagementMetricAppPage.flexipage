@@ -1,0 +1,13 @@
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Engagement Metric App Page</masterLabel>
+    <description>App Page for viewing and analyzing engagement metrics</description>
+    <flexiPageRegions>
+        <name>mainRegion</name>
+        <type>Region</type>
+        <components>
+            <componentInstance>
+                <componentName>c:EngagementMetricComponent</componentName>
+            </componentInstance>
+        </components>
+    </flexiPageRegions>
+</FlexiPage>
